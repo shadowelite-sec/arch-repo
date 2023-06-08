@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm x86_64/arch-repo.files
+rm x86_64/arch-repo.db
+repo-add x86_64/arch-repo.db.tar.gz
+rm x86_64/arch-repo.files
+rm x86_64/arch-repo.db
+mv x86_64/arch-repo.files.tar.gz x86_64/arch-repo.files
+mv x86_64/arch-repo.db.tar.gz x86_64/arch-repo.db
+
+echo "[*] All Done !"
